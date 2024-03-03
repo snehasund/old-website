@@ -1,0 +1,148 @@
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(244, 237, 228);
+            }
+
+        nav {
+            background-color: #131e17;
+            color: white;
+            padding: 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+            color: white;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .card {
+            width: 200px;
+            background-color: #f0f0f0;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
+            opacity: 0;
+            animation: pop-up 0.5s ease forwards;
+            transform: translateY(50px); /* Initially translate it down */
+        }
+
+        .card2 {
+            width: 350px;
+            background-color: #f1efef;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
+            animation: slide-in 2s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .card2:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+        
+        .card2:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+        
+        .card2:nth-child(3) {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes pop-up {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        
+        .card:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        
+        .card:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+        .card:nth-child(4) {
+            animation-delay: 1.3s;
+        }
+        
+
+        #hello {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .profile-picture {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%; /* To make it circular */
+            margin-bottom: 20px;
+            display: inline-block;
+          }
+        
+        .profile-text {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px; /* Adjust padding to change button size */
+            border: none;
+            border-radius: 50px; /* 50% of the height to make it oval-shaped */
+            background-color: #284730; /* Button color */
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .resume-button:hover {
+            background-color: #280b0b; /* Darker color on hover */
+        }
