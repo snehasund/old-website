@@ -4,7 +4,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: rgb(244, 237, 228);
+            background-color: whitesmoke;
             }
 
         nav {
@@ -35,23 +35,116 @@
             padding: 20px;
         }
 
+        #about-me {
+            background-color: #44674c; /* Choose your desired background color */
+            padding: 20px; /* Add padding for better visual separation */
+            display: flex;
+            justify-content: space-between;
+          }
+
+        #bio {
+            align-self: flex-start;
+        }
+
+        #rest-of-bio {
+            align-self: flex-end;
+        }
+
+        #projects {
+            background-color: #fff2d7;
+            padding: 20px;
+        }
+        #education {
+            background-color: #bcceb2;
+        }
+        #experience {
+            background-color: rgb(236, 221, 213);
+        }
         .card-container {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             flex-direction: row;
         }
-        
-        .card {
+
+        .school {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .school1 {
             width: 200px;
-            background-color: #f0f0f0;
+            height: 200px;
+            background-color: #fff2d7;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
+            box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
+            opacity: 1; /* Set opacity to 1 to ensure visibility */
+            border: 2px solid #44674c;
+          }
+
+        .card-image {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px; /* Optional: To match the card border radius */
+        }
+
+
+        .school1 .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .school1 .front,
+        .school1 .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            opacity: 1;
+        }
+
+        .school1 .back {
+            display: none;
+            transform: rotateY(180deg);
+            color: black; /* Change to white or any suitable color */
+        }
+
+        .back {
+            color: black;
+        }
+        
+    
+        .school1.flipped {
+            transform: rotateY(180deg);
+          }
+          
+        .school1.flipped .front {
+            display: none;
+          }
+          
+        .school1.flipped .back {
+            display: none;
+        }
+
+        .card {
+            width: 250px;
+            height: 350px;
+            background-color: #fff2d7;;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
             opacity: 0;
             animation: pop-up 0.5s ease forwards;
             transform: translateY(50px); /* Initially translate it down */
+            border: 2px solid #44674c;
         }
 
         .card2 {
@@ -63,6 +156,7 @@
             box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
             animation: slide-in 2s ease forwards;
             opacity: 0;
+            border: 2px dotted #1a6700;
         }
 
         @keyframes slide-in {
@@ -112,31 +206,35 @@
         .card:nth-child(4) {
             animation-delay: 1.3s;
         }
-        
-
-        #hello {
-            text-align: center;
-            padding: 20px;
-        }
-        
         .profile-picture {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%; /* To make it circular */
+            width: 250px;
+            height: 250px;
             margin-bottom: 20px;
             display: inline-block;
+            margin-right: 20px;
+            margin-top: 50px;
+            border-radius: 10px; 
           }
         
         .profile-text {
             font-size: 16px;
             line-height: 1.5;
+            text-align: end;
+        }
+        .info {
+            margin-right: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px; /* Adjust margin as needed */
         }
         .resume-button {
             display: inline-block;
             padding: 10px 20px; /* Adjust padding to change button size */
             border: none;
             border-radius: 50px; /* 50% of the height to make it oval-shaped */
-            background-color: #284730; /* Button color */
+            background-color: #472828; /* Button color */
             color: white;
             text-decoration: none;
             font-size: 16px;

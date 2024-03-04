@@ -30,3 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 });
+
+function toggleFlashcard(card) {
+    card.classList.toggle('flipped');
+  }
+  
