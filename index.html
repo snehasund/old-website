@@ -13,33 +13,44 @@
     <a href="#aboutme" class="w3-button w3-bar-item">about me</a>
     <a href="#projects" class="w3-button w3-bar-item">projects</a>
     <a href="#experience" class="w3-button w3-bar-item">experience</a>
-    <a href="#education" class="w3-button w3-bar-item">education</a>
+    <a href="#education" class="w3-button w3-btar-item">education</a>
   </nav>
-  <section id="about-me" align="center">
-    <h2>about me</h2>
-    <div class="profile">
-      <div class="profile-picture" id="profile-picture"></div>
+
+  <section id="about-me" align="right">
+    <section id="bio" align="left">
+      <div class="bio">
+        <h2>Sneha Sundar</h2>
+      </div>
+      <div class="description">
+        <p>add a lovely description about me</p>
+      </div>
+    </section>
+    <section id="rest-of-bio">
+    <div class="profile" alt="profile-picture">
+      <img class="profile-picture" src="profile-picture.jpg"></img>
     </div>
-    <div class="info">
-      <p class="profile-text">hi, im snebs a stats & cs major at uiuc!</p>
-      <a href="sneha_s_resume-5.pdf" download class="resume-button">Download Resume</a>
+    <div class="info" align = "right">
+      <div class="button-container">
+        <a href="sneha_s_resume-5.pdf" download class="resume-button">Download Resume</a>
+      </div>
     </div>
   </section>
-  <section id="projects">
-    <h2>what i up to right now?</h2>
+  </section>
+  <section id="projects" align="left">
+    <h2>recent projects</h2>
     <!-- Your "about me" content goes here -->
     <div class="card-container">
         <div class="card">
             <h3>library management system</h3>
-            <p>This is the content of card 1.</p>
+            <p>a website that hosts a library of books, authors, and users built in python using the django-framework</p>
         </div>
         <div class="card">
             <h3>emotion detection model</h3>
-            <p>This is the content of card 2.</p>
+            <p>a python based model that recongizes and categorizes the exaggerated facial expressions of dancers with the hope of being used as a training tool</p>
         </div>
         <div class="card">
-            <h3>restaurant reccomender</h3>
-            <p>This is the content of card 3.</p>
+            <h3>restaurant recommender</h3>
+            <p>unsure what to say here. </p>
         </div>
         <div class="card">
             <h3>resume-book</h3>
@@ -51,17 +62,35 @@
     <!-- Your "about me" content goes here -->
   <h2>education</h2>
     <div class = "school">
-      <h3>University of Illinois Urbana-Champaign</h3>
-      <a>Bachelor's of Science: Statistics & Computer Science</a>
-      <br><a>gpa: 3.69</a></br>
+      <div class="school1" onclick="toggleFlashcard(this)">
+        <div class="front">
+          <img src="uiuc.jpeg" alt="Image" class="card-image">
+        </div>
+        <div class="back">
+          <h3>University of Illinois Urbana-Champaign</h3>
+          <a>Bachelor's of Science: Statistics & Computer Science</a>
+          <br>
+          <br><a>gpa: 3.69</a></br>
+        </div>
+      </div>
+      <div class="school1" onclick="toggleFlashcard(this)">
+      <div class="front">
+        <img src="de-anza.jpeg" alt="Image" class="card-image">
+      </div>
+      <div class="back">
+        <h3>De Anza College</h3>
+        <a>focus in computer science & mathematics</a>
     </div>
-    <div class = "school">
-      <h3>De Anza College</h3>
-      <a>focus in computer science & mathematics</a>
+  </div>
+    <div class="school1" onclick="toggleFlashcard(this)">
+      <div class="front">
+        <img src="lynnie.png" alt="Image" class="card-image">
+      </div>
+      <div class="back">
+        <h3>Lynbrook High School</h3>
+        <a>gpa: 4.45</a>
     </div>
-    <div class = "school">
-      <h3>Lynbrook High School</h3>
-      <a>gpa: 4.45</a>
+    </div>
     </div>
   </section>
 </section>
@@ -71,15 +100,34 @@
   <div class="card-container">
       <div class="card2">
           <h3>technical skills</h3>
-          <p>This is the content of card 1.</p>
+          <p>
+            <li>C / C++(programming language)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PyTorch</li>
+            <li>pandas</li>
+            <li>Django</li>
+            <li>Java</li>
+          </p>
       </div>
       <div class="card2">
           <h3>coursework</h3>
-          <p>This is the content of card 2.</p>
+          <p>
+            <li>Data Structures and Algorithms</li>
+            <li>Discrete Structures</li>
+            <li>Introduction to Computer Systems</li>
+            <li>Software Design Lab</li>
+            <li>Statistics and Probability</li>
+            <li>Data Science Discovery</li>
+            <li>Programming Methodologies in C++</li>
+          </p>
       </div>
       <div class="card2">
           <h3>other experiences</h3>
-          <p>This is the content of card 4.</p>
+          <p>
+            <li>Data Science Discovery Course Assistant</li>
+            <li>Symbolic Metamodeling Research - Modified symbolic metamodel to take inputs of heart disease & diabetes patient records and predict their prognoses.</li>
+          </p>
       </div>
   </div>
 </section>
