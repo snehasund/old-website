@@ -31,6 +31,23 @@
             text-decoration: none;
         }
 
+        .w3-bar {
+            display: flex;
+            justify-content: space-between; /* Align items evenly */
+            align-items: center; /* Center items vertically */
+            background-image: linear-gradient(to right, #082408, #3cca7c); /* Gradient background from forest green to lighter forest green */
+        }
+        .w3-button i {
+            font-size: 24px; /* Adjust the size as needed */
+        }
+
+ 
+        
+        .w3-button {
+            padding: 16px; /* Add padding to make the buttons more clickable */
+            color: white;
+        }
+
         section {
             padding: 20px;
         }
@@ -57,11 +74,12 @@
 
 
         #about-me {
-            background-color: #44674c;
+            background: conic-gradient(#00563f, #4b8d78);
             /* Choose your desired background color */
             padding: 20px;
             /* Add padding for better visual separation */
             display: flex;
+            color: #080808;
             justify-content: space-between;
         }
 
@@ -104,7 +122,7 @@
         }
 
         .description {
-            max-width: 600px;
+            max-width: 460px;
             margin-top: 20px;
             font-family: Ariral, sans-serif;
             font-size: 18px;
@@ -261,17 +279,21 @@
         }
 
         .profile-picture {
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
             margin-bottom: 20px;
             display: inline-block;
-            margin-right: 20px;
+            margin-right: 130px;
             margin-top: 50px;
             border-radius: 50%;
+            box-shadow: 
+            0 0 0 5px rgba(0, 0, 0, 0.1), /* Innermost layer */
+            0 0 0 10px rgba(0, 0, 0, 0.1), /* Middle layer */
+            0 0 0 15px rgba(0, 0, 0, 0.1); /* Outermost layer */
         }
 
         .profile-text {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.5;
             text-align: end;
         }
@@ -283,16 +305,17 @@
         .button-container {
             display: flex;
             justify-content: flex-end;
-            margin-right: 5px;
+            align-items: end;
+            margin-right: 120px;
             /* Adjust margin as needed */
         }
 
         .resume-button {
-            padding: 10px 20px;
+            padding: 20px 30px;
             background-color: #634949;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 20px;
         }
 
         .resume-button:hover {
