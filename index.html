@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <script src="func.js"></script>
 
 
@@ -10,28 +11,40 @@
 <body>
   <!-- Navigation -->
   <nav class="w3-bar w3-green">
-    <a href="#aboutme" class="w3-button w3-bar-item">about me</a>
-    <a href="#projects" class="w3-button w3-bar-item">projects</a>
-    <a href="#experience" class="w3-button w3-bar-item">experience</a>
-    <a href="#education" class="w3-button w3-btar-item">education</a>
+    <div>
+      <a href="#aboutme" class="w3-button w3-bar-item">About Me</a>
+      <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+      <a href="#experience" class="w3-button w3-bar-item">Experience</a>
+      <a href="#education" class="w3-button w3-bar-item">Education</a>
+    </div>
+    <!-- Add icons for LinkedIn, GitHub, and email -->
+    <div>
+      <a href="https://www.linkedin.com/" class="w3-button w3-bar-item" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/" class="w3-button w3-bar-item" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:your-email@example.com" class="w3-button w3-bar-item"><i class="fas fa-envelope"></i> Email</a>
+    </div>
   </nav>
 
   <section id="about-me" align="right">
     <section id="bio" align="left">
       <div class="bio">
-        <h2>Sneha Sundar</h2>
+        <h2>Hello and Welcome!</h2>
       </div>
       <div class="description">
-        <p>add a lovely description about me</p>
+        <p>I'm Sneha Sundar, 
+          a student at the University of Illinois Urbana-Champaign currently pursuing a 
+          Bachelor of Science in Statistics & Computer Science. I am incredibly passionate about leveraging data and technology to solve complex problems, 
+          and I am actively honing my skills in web development, machine learning, and statistical analysis through a combination of academic coursework and 
+          hands-on experience.</p>
       </div>
     </section>
     <section id="rest-of-bio">
     <div class="profile" alt="profile-picture">
-      <img class="profile-picture" src="profile-picture.jpg"></img>
+      <img class="profile-picture" src="profile-picture.png"></img>
     </div>
     <div class="info" align = "right">
       <div class="button-container">
-        <a href="sneha_s_resume-5.pdf" download class="resume-button">Download Resume</a>
+        <a href="sneha_s_resume-5.pdf" download class="resume-button">Download my Resume</a>
       </div>
     </div>
   </section>
@@ -50,11 +63,11 @@
         </div>
         <div class="card">
             <h3>restaurant recommender</h3>
-            <p>unsure what to say here. </p>
+            <p>a predictive model that takes in user preferences to filter through online datasets to reccomend the user a restaurant to eat at. </p>
         </div>
         <div class="card">
             <h3>resume-book</h3>
-            <p>This is the content of card 4.</p>
+            <p>helps recruiters and students connect with each other by uploading all student resumes to a platform with filtering capabilities based on year in university, skills, and courses taken.</p>
         </div>
     </div>
   </section>
@@ -79,7 +92,7 @@
       </div>
       <div class="back">
         <h3>De Anza College</h3>
-        <a>focus in computer science & mathematics</a>
+        <a>studied & took courses in computer science & mathematics</a>
     </div>
   </div>
     <div class="school1" onclick="toggleFlashcard(this)">
