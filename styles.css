@@ -53,13 +53,19 @@
         }
 
         .bio h2 {
-            font-size: 25px;
+            font-size: 50px;
             font-weight: bold;
             margin: auto;
             animation: typing 4s steps(30, end) forwards !important;
             overflow: hidden;
             white-space: nowrap;
             width: 0;
+        }
+
+        #typingEffect span {
+            font-weight: bold; /* Make the text bold */
+            color: #000000; /* Change the text color */
+            font-size: 28px;
         }
 
         @keyframes typing {
@@ -74,7 +80,7 @@
 
 
         #about-me {
-            background: conic-gradient(#00563f, #4b8d78);
+            background: linear-gradient(#00563f, #00684d);
             /* Choose your desired background color */
             padding: 20px;
             /* Add padding for better visual separation */
@@ -106,6 +112,22 @@
             padding: 20px;
         }
 
+        .card .book-list {
+            line-height: 1.5;
+        }
+
+        .card .mask-list {
+            line-height: 1.5;
+        }
+
+        .card .cutlery-list {
+            line-height: 1.5;
+        }
+
+        .card .paper-pen-list {
+            line-height: 1.5;
+        }
+
         #education {
             background-color: #bcceb2;
         }
@@ -120,12 +142,17 @@
             flex-wrap: wrap;
             flex-direction: row;
         }
+        #additionalText {
+            font-size: 23px; /* Change the font size */
+            font-family: 'Georgia';
+            line-height: 1.5;
 
+        }
         .description {
-            max-width: 460px;
+            max-width: 700px;
             margin-top: 20px;
             font-family: Ariral, sans-serif;
-            font-size: 18px;
+            font-size: 25px;
             line-height: 1.6;
         }
 
@@ -139,6 +166,7 @@
         .school1 {
             width: 200px;
             height: 200px;
+            perspective: 1000px;
             background-color: #fff2d7;
             margin: 10px;
             padding: 20px;
@@ -148,6 +176,7 @@
             /* Set opacity to 1 to ensure visibility */
             border: 2px solid #44674c;
         }
+
 
         .card-image {
             max-width: 200px;
@@ -165,41 +194,30 @@
             transform-style: preserve-3d;
         }
 
-        .school1 .front,
-        .school1 .back {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            backface-visibility: hidden;
-            opacity: 1;
-        }
-
-        .school1 .back {
-            display: none;
-            transform: rotateY(180deg);
-            color: black;
-            /* Change to white or any suitable color */
-        }
-
+        .front,
         .back {
-            color: black;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          backface-visibility: hidden;
         }
-
-
-        .school1.flipped {
+        .back {
             transform: rotateY(180deg);
+          }
+        .back a {
+            font-size: 19px;
         }
-
-        .school1.flipped .front {
-            display: none;
-        }
-
-        .school1.flipped .back {
-            display: none;
-        }
+        
+          .flipped .front {
+            transform: rotateY(180deg);
+          }
+        
+          .flipped .back {
+            transform: rotateY(0deg);
+          }
 
         .card {
-            width: 250px;
+            width: 300px;
             height: 350px;
             background-color: #fff2d7;
             ;
@@ -215,7 +233,7 @@
         }
 
         .card2 {
-            width: 350px;
+            width: 400px;
             background-color: #f1efef;
             padding: 20px;
             margin: 10px;
@@ -283,7 +301,7 @@
             height: 300px;
             margin-bottom: 20px;
             display: inline-block;
-            margin-right: 130px;
+            margin-right: 85px;
             margin-top: 50px;
             border-radius: 50%;
             box-shadow: 
@@ -306,7 +324,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: end;
-            margin-right: 120px;
+            margin-right: 70px;
             /* Adjust margin as needed */
         }
 
