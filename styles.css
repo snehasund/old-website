@@ -1,10 +1,10 @@
         /* Your CSS styles here */
-        body {
+        html, body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: whitesmoke;
+            background:linear-gradient(#f29559, whitesmoke) ;
         }
 
         nav {
@@ -35,7 +35,7 @@
             display: flex;
             justify-content: space-between; /* Align items evenly */
             align-items: center; /* Center items vertically */
-            background-image: linear-gradient(to right, #082408, #3cca7c); /* Gradient background from forest green to lighter forest green */
+            background-image: linear-gradient(to right, #29295f, #a2b3f5); /* Gradient background from forest green to lighter forest green */
         }
         .w3-button i {
             font-size: 24px; /* Adjust the size as needed */
@@ -80,7 +80,6 @@
 
 
         #about-me {
-            background: linear-gradient(#00563f, #00684d);
             /* Choose your desired background color */
             padding: 20px;
             /* Add padding for better visual separation */
@@ -108,8 +107,7 @@
 
 
         #projects {
-            background-color: #fff2d7;
-            padding: 20px;
+            padding: 40px;
         }
 
         .card .book-list {
@@ -128,13 +126,6 @@
             line-height: 1.5;
         }
 
-        #education {
-            background-color: #bcceb2;
-        }
-
-        #experience {
-            background-color: rgb(236, 221, 213);
-        }
 
         .card-container {
             display: flex;
@@ -154,6 +145,7 @@
             font-family: Ariral, sans-serif;
             font-size: 25px;
             line-height: 1.6;
+     
         }
 
         .school {
@@ -167,7 +159,6 @@
             width: 200px;
             height: 200px;
             perspective: 1000px;
-            background-color: #fff2d7;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
@@ -219,8 +210,6 @@
         .card {
             width: 300px;
             height: 350px;
-            background-color: #fff2d7;
-            ;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
@@ -234,7 +223,6 @@
 
         .card2 {
             width: 400px;
-            background-color: #f1efef;
             padding: 20px;
             margin: 10px;
             border-radius: 10px;
