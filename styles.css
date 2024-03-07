@@ -135,14 +135,14 @@
         }
         #additionalText {
             font-size: 23px; /* Change the font size */
-            font-family: 'Georgia';
             line-height: 1.5;
+            font-family: Arial, sans-serif;
 
         }
         .description {
             max-width: 700px;
             margin-top: 20px;
-            font-family: Ariral, sans-serif;
+            font-family: Arial, sans-serif;
             font-size: 25px;
             line-height: 1.6;
      
@@ -165,7 +165,7 @@
             box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
             opacity: 1;
             /* Set opacity to 1 to ensure visibility */
-            border: 2px solid #44674c;
+            border: 2px solid #29295f;
         }
 
 
@@ -218,7 +218,7 @@
             animation: pop-up 0.5s ease forwards;
             transform: translateY(50px);
             /* Initially translate it down */
-            border: 2px solid #44674c;
+            border: 2px solid #29295f;
         }
 
         .card2 {
@@ -229,7 +229,7 @@
             box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
             animation: slide-in 2s ease forwards;
             opacity: 0;
-            border: 2px dotted #1a6700;
+            border: 2px dotted #29295f;
         }
 
         @keyframes slide-in {
