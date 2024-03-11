@@ -232,6 +232,19 @@
             border: 2px dotted #29295f;
         }
 
+        .card2 li {
+            line-height: 1.5;
+        }
+
+        .card2 li a {
+            color: #7b4431;
+            text-decoration: none;
+          }
+        
+          .card2 li a:hover {
+            text-decoration: underline;
+          }
+
         @keyframes slide-in {
             from {
                 opacity: 0;

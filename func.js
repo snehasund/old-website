@@ -10,7 +10,7 @@ const typingEffectLoop = {
         "you've made it to sneha's portfolio website!",
         "i'm sneha, a data scientist",
         "n I L L I N I 💙 🧡",
-        "a web developer",
+        " full-stack developer",
       ],
   
     index: 0,
