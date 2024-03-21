@@ -20,6 +20,7 @@
       <a href="#aboutme" class="w3-button w3-bar-item">about me</a>
       <a href="#projects" class="w3-button w3-bar-item">projects</a>
       <a href="#education" class="w3-button w3-bar-item">education</a>
+      <a href="#skills" class="w3-button w3-bar-item">skills</a>
     </div>
     <!-- Add icons for LinkedIn, GitHub, and email -->
     <div>
@@ -55,7 +56,7 @@
       </div>
       <div class="info" align="right">
         <div class="button-container">
-          <a href="resume-cv.pdf" download class="resume-button">Download my Resume</a>
+          <a href="sneha-resume.pdf" download class="resume-button">Download my Resume</a>
         </div>
       </div>
     </section>
@@ -65,7 +66,8 @@
     <!-- Your "about me" content goes here -->
     <div class="card-container">
       <div class="card">
-        <h3 href="https://github.com/snehasund/library-management-system">library management system</href></h3>
+        <h3>library management system</h3>
+        <h4><a href="https://github.com/snehasund/library-management-system">view the github repo here</a></h4>
         <ul class="book-list">
           <a><i class="fas fa-book"></i> &nbsp; A website that hosts a library of books, authors, and users built in
             Python using the Django framework.</a><br>
@@ -73,12 +75,14 @@
           <a><i class="fas fa-book"></i> &nbsp; Provides features for administrators to manage the library catalog, user
             accounts, and borrowing records.</a><br>
           <a><i class="fas fa-book"></i> &nbsp; Includes authentication and authorization mechanisms to ensure secure
-            access to the system.</a>
+            access to the system.</a><br>
+            <a><i class="fas fa-book"></i> &nbsp; Users have the ability to add any published book to their library, with book covers automatically fetched from a dedicated book covers API.</a>
 
         </ul>
       </div>
       <div class="card">
         <h3>analysis of the world happiness report</h3>
+        <h4><a href="https://github.com/snehasund/world-happiness-analysis">view the github repo here</a></h4>
         <ul class="mask-list">
           <a><i class="fas fa-chart-bar" aria-hidden="true"></i> &nbsp; Conducted data cleaning and preparation using R
             to ensure consistency and accuracy in the World Happiness Report dataset.</a><br>
@@ -87,13 +91,14 @@
           <a><i class="fas fa-chart-bar"></i> &nbsp; Utilized density curves to visualize the distribution of happiness
             scores by region, offering insights into the variability and concentration of happiness within each
             region.</a><br>
-          <a><i class="fas fa-chart-bar"></i> &nbsp; Leveraged ggplot2 in R to generate high-quality visualizations that
-            effectively communicate key findings from the World Happiness Report dataset.</a>
+          <a><i class="fas fa-chart-bar"></i> &nbsp; Leveraged ggplot2 to generate visualizations to
+            communicate key findings from the dataset.</a>
 
         </ul>
       </div>
       <div class="card">
         <h3>web page & text summarizer</h3>
+        <h4><a href="https://github.com/snehasund/summarizer">view the github repo here</a></h4>
         <ul class="paper-pen-list">
           <a><i class="fas fa-file-alt"></i>&nbsp; Developed a Flask-based web application that extracts content from web pages and lengthy texts for succinct summarization.</a><br>
           <a><i class="fas fa-file-alt"></i>&nbsp; Utilized BeautifulSoup and requests libraries to scrape HTML content from web pages, ensuring accurate retrieval of textual data.</a><br>
@@ -109,7 +114,7 @@
     <div class="school">
       <div class="school1" onclick="toggleFlashcard(this)">
         <div class="front">
-          <img src="uiuc.jpeg" alt="Image" class="card-image">
+          <img src="uiuc.png" alt="Image" class="uiuc-card-image">
         </div>
         <div class="back">
           <h3>University of Illinois Urbana-Champaign</h3>
@@ -119,10 +124,11 @@
           <br>
           <br><a>gpa: 3.69</a></br>
         </div>
+        <div class="flash-text">Click Me!</div> <!-- Add this line -->
       </div>
       <div class="school1" onclick="toggleFlashcard(this)">
         <div class="front">
-          <img src="de-anza.jpeg" alt="Image" class="card-image">
+          <img src="de-anza.png" alt="Image" class="card-image">
         </div>
         <div class="back">
           <h3>De Anza College</h3>
@@ -130,36 +136,39 @@
           <br>
           <a>science & mathematics</a>
         </div>
+        <div class="flash-text">Click Me!</div> <!-- Add this line -->
       </div>
+      <div class="flash-text">Click Me!</div> <!-- Add this line -->
       <div class="school1" onclick="toggleFlashcard(this)">
         <div class="front">
-          <img src="lynnie.png" alt="Image" class="card-image">
+          <img src="lynnie.png" alt="Image" class="lyn-card-image">
         </div>
         <div class="back">
           <h3>Lynbrook High School</h3>
           <a>gpa: 4.45</a>
         </div>
+        <div class="flash-text">Click Me!</div> <!-- Add this line -->
       </div>
     </div>
   </section>
   </section>
 
-  <section id="experience">
-    <!-- Your "about me" content goes here -->
+  <section id="skills">
+    <h2>skills - coursework - experiences</h2>
     <div class="card-container">
       <div class="card2">
         <h3>Technical Skills</h3>
         <p>
-          <li>C / C++(programming language)</li>
-          <li>Python</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>PyTorch</li>
-          <li>pandas</li>
-          <li>Django</li>
-          <li>Java</li>
+          <li><a href="https://en.cppreference.com/w/c/language" target="_blank">C</a> / <a href="https://en.cppreference.com/w/cpp" target="_blank">C++</a> (programming language)</li>
+          <li><a href="https://docs.python.org/3/" target="_blank">Python</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+          <li><a href="https://pytorch.org/docs/stable/index.html" target="_blank">PyTorch</a></li>
+          <li><a href="https://pandas.pydata.org/docs/" target="_blank">pandas</a></li>
+          <li><a href="https://docs.djangoproject.com/en/stable/" target="_blank">Django</a></li>
+          <li><a href="https://docs.oracle.com/en/java/" target="_blank">Java</a></li>
         </p>
-      </div>
+      </div>      
       <div class="card2">
         <h3>Coursework</h3>
         <p>
@@ -176,11 +185,14 @@
         <h3>Experience</h3>
         <p>
           <li>Data Science Discovery Course Assistant</li>
+          <li>Developer @ Association for Computing Machinery</li>
           <li><a
               href="https://terra-docs.s3.us-east-2.amazonaws.com/IJHSR/Articles/volume5-issue2/IJHSR_2023_52_p116.pdf">Symbolic
               Metamodeling Research</a> - Modified symbolic metamodel to take inputs of heart disease & diabetes patient
             records and predict their prognoses</li>
           </li>
+          <li>Research Intern, iPRoBe Lab - Michicagn State Univeristy</li>
+          <li>Web Development Intern @ piMD</li>
         </p>
       </div>
     </div>
