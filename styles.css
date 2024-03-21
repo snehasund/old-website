@@ -121,6 +121,16 @@
             padding: 40px;
         }
 
+        #projects h2,
+        #education h2, 
+        #skills h2 {
+            font-size: 2em;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+        }
+
         .card .book-list {
             line-height: 1.5;
         }
