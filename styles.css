@@ -55,7 +55,6 @@
         .bio h2 {
             font-size: 50px;
             font-weight: bold;
-            margin: auto;
             animation: typing 4s steps(30, end) forwards !important;
             overflow: hidden;
             white-space: nowrap;

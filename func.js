@@ -7,8 +7,8 @@ function toggleFlashcard(element) {
 
 const typingEffectLoop = {
     textArray: [
-        "you've made it to sneha's portfolio website!",
-        "i'm sneha, a data scientist",
+        "hello and welcome!",
+        "i'm a data scientist.",
         "n I L L I N I 💙 🧡",
         " full-stack developer",
       ],
@@ -29,7 +29,7 @@ const typingEffectLoop = {
     addLetters: function () {
       var currentText = this.textArray[this.index];
       if (this.index == 3 || this.index == 2) {
-        currentText = "i'm sneha, a" + this.textArray[this.index].substring(this.textArray[this.index].indexOf(","));
+        currentText = "i'm a" + this.textArray[this.index].substring(this.textArray[this.index].indexOf(","));
       }
       this.text = currentText.substring(0, this.text.length + 1);
       this.updateText();
@@ -38,7 +38,7 @@ const typingEffectLoop = {
     removeLetters: function () {
       var currentText = this.textArray[this.index];
       if (this.index == 3 || this.index == 2) {
-        currentText = "i'm sneha, a" + this.textArray[this.index].substring(this.textArray[this.index].indexOf(","));
+        currentText = "i'm a" + this.textArray[this.index].substring(this.textArray[this.index].indexOf(","));
       }
       this.text = currentText.substring(0, this.text.length - 1);
       this.updateText();
