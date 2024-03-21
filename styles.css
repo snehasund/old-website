@@ -1,6 +1,6 @@
         /* Your CSS styles here */
         html, body {
-            font-family: Arial, sans-serif;
+            font-family: "Truculenta", sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -135,13 +135,12 @@
         #additionalText {
             font-size: 23px; /* Change the font size */
             line-height: 1.5;
-            font-family: Arial, sans-serif;
-
+            font-family: "Truculenta", sans-serif;
         }
         .description {
             max-width: 700px;
             margin-top: 20px;
-            font-family: Arial, sans-serif;
+            font-family: "Truculenta", sans-serif;
             font-size: 25px;
             line-height: 1.6;
      
@@ -207,8 +206,8 @@
           }
 
         .card {
-            width: 400px;
-            height: 350px;
+            width: 300px;
+            height: 475px;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
