@@ -43,7 +43,7 @@
         }
 
         .w3-button i {
-            font-size: 24px;
+            font-size: 30px;
             /* Adjust the size as needed */
         }
 
@@ -124,12 +124,13 @@
         #projects h2,
         #education h2, 
         #skills h2 {
-            font-size: 2em;
+            font-size: 40px;
         }
 
         .card h3 {
-            font-size: 1.5em;
+            font-size: 30px;
         }
+     
 
         .card .book-list {
             line-height: 1.5;
@@ -244,8 +245,8 @@
         }
 
         .card {
-            width: 300px;
-            height: 500px;
+            width: 350px;
+            height: 625px;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
@@ -280,6 +281,14 @@
         .card2 li a:hover {
             text-decoration: underline;
         }
+
+        .card2 {
+            font-size: 20px;
+        }
+        .card2 h3 {
+            font-size: 30px;
+        }
+
 
         @keyframes slide-in {
             from {
@@ -374,6 +383,7 @@
             text-decoration: none;
             border-radius: 20px;
             margin-top: 20px;
+            font-size: 20px;
   
         }
 
@@ -409,4 +419,8 @@
             to {
                 opacity: 1;
             }
+        }
+
+        .card a {
+            font-size: 20px;
         }
