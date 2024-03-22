@@ -8,9 +8,9 @@ function toggleFlashcard(element) {
 const typingEffectLoop = {
   textArray: [
       "you've made it to sneha's portfolio website!",
-      "i'm sneha, a data scientist",
+      "i'm a data scientist",
       "n I L L I N I 💙 🧡",
-      " full-stack developer",
+      " developer",
     ],
 
   index: 0,
