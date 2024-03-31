@@ -1,459 +1,426 @@
-/* Global styles */
-html,
-body {
-    font-family: "Truculenta", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(#f29559, whitesmoke);
-}
-
-/* Navigation styles */
-nav {
-    background-color: #131e17;
-    color: white;
-    padding: 30px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline;
-    color: white;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Header styles */
-.w3-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to right, #29295f, #a2b3f5);
-}
-
-.w3-button i {
-    font-size: 30px;
-}
-
-.w3-button {
-    padding: 16px;
-    color: white;
-}
-
-/* Section styles */
-section {
-    padding: 20px;
-}
-
-/* Bio section styles */
-.bio h2 {
-    font-size: 50px;
-    font-weight: bold;
-    animation: typing 4s steps(30, end) forwards !important;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    margin-bottom: 0;
-}
-
-#typingEffect span {
-    font-weight: bold;
-    color: #000000;
-    font-size: 32px;
-    margin-left: 15px;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-/* About Me section styles */
-#about-me {
-    padding: 20px;
-    display: flex;
-    color: #080808;
-    justify-content: space-between;
-}
-
-#bio {
-    align-self: flex-start;
-}
-
-#rest-of-bio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.profile-picture-container {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.profile-picture {
-    width: 100%;
-    height: auto;
-}
-
-.about-me-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(139, 139, 213);
-    padding: 40px;
-    margin-bottom: 20px;
-    max-width: 800px;
-    box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(0, 0, 0, 0.1),
-        0 0 40px rgba(0, 0, 0, 0.1),
-        0 0 50px rgba(0, 0, 0, 0.1);
-}
-
-.about-me-container::before,
-.about-me-container::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 3px solid rgb(21, 5, 73);
-    pointer-events: none;
-    color: rgb(21, 5, 73);
-}
-
-.about-me-container::before {
-    top: 10px;
-    left: 10px;
-}
-
-.about-me-container::after {
-    bottom: 10px;
-    right: 10px;
-}
-
-.about-me-container .bio {
-    flex: 1;
-    color: #fff;
-}
-
-.about-me-container h2 {
-    color: rgb(7, 16, 87);
-    margin-bottom: 20px;
-}
-
-.about-me-container p {
-    margin-bottom: 10px;
-}
-
-.about-me-container a {
-    color: rgb(23, 5, 83);
-}
-
-.about-me-container a:hover {
-    color: #ff4500;
-}
-
-/* Projects, Education, Skills section styles */
-#projects {
-    padding: 40px;
-}
-
-#projects h2,
-#education h2,
-#skills h2 {
-    font-size: 40px;
-}
-
-/* Card styles */
-.card h3 {
-    font-size: 30px;
-}
-
-.card .book-list,
-.card .mask-list,
-.card .cutlery-list,
-.card .paper-pen-list {
-    line-height: 1.5;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-/* Additional Text styles */
-#additionalText {
-    font-size: 30px;
-    line-height: 1.5;
-    font-family: "Truculenta", sans-serif;
-    text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-/* Description styles */
-.description {
-    max-width: 700px;
-    font-family: "Truculenta", sans-serif;
-    font-size: 25px;
-    line-height: 1.6;
-}
-
-/* School styles */
-.school {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.school1 {
-    width: 200px;
-    height: 200px;
-    perspective: 1000px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
-    opacity: 1;
-    border: 2px solid #29295f;
-    align-items: center;
-}
-
-.card-image,
-.uiuc-card-image {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 2px;
-}
-
-.lyn-card-image {
-    margin-top: 10px;
-}
-
-.school1 .content {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.back {
-    transform: rotateY(180deg);
-}
-
-.back a {
-    font-size: 19px;
-}
-
-.flipped .front {
-    transform: rotateY(180deg);
-}
-
-.flipped .back {
-    transform: rotateY(0deg);
-}
-
-/* Card animation styles */
-.card,
-.card2 {
-    width: 350px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
-}
-
-.card2 {
-    width: 400px;
-    border: 2px dotted #29295f;
-}
-
-.card2 li {
-    line-height: 1.5;
-}
-
-.card2 li a {
-    color: #7b4431;
-    text-decoration: none;
-}
-
-.card2 li a:hover {
-    text-decoration: underline;
-}
-
-.card2 {
-    font-size: 20px;
-}
-
-.card2 h3 {
-    font-size: 30px;
-}
-
-/* Card animation keyframes */
-@keyframes slide-in {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes pop-up {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Profile styles */
-.profile-picture {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow:
-        0 0 0 5px rgba(0, 0, 0, 0.1),
-        0 0 0 10px rgba(0, 0, 0, 0.1),
-        0 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
-}
-
-.profile-text {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: end;
-}
-
-.info {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-/* Button styles */
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-.resume-button {
-    padding: 20px 30px;
-    background-color: #634949;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.resume-button:hover {
-    background-color: #280b0b;
-}
-
-/* Flash text animation */
-.flash-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-
-.school1:hover .flash-text {
-    display: block;
-    font-size: 25px;
-    color: black;
-    text-decoration: bold;
-    animation: blink 1s infinite alternate;
-}
-
-@keyframes blink {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Miscellaneous */
-.bio {
-    flex: 1;
-}
-
-.about-me-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: auto;
-}
-
-.bio {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.profile {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.bio-content {
-    margin-right: 20px;
-}
-
-.profile img {
-    max-width: 300px;
-}
-
-.info {
-    margin-left: 20px;
-}
+        /* Your CSS styles here */
+        html,
+        body {
+            font-family: "Truculenta", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(#f29559, whitesmoke);
+        }
+
+        nav {
+            background-color: #131e17;
+            color: white;
+            padding: 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+            color: white;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .w3-bar {
+            display: flex;
+            justify-content: space-between;
+            /* Align items evenly */
+            align-items: center;
+            /* Center items vertically */
+            background-image: linear-gradient(to right, #29295f, #a2b3f5);
+            /* Gradient background from forest green to lighter forest green */
+        }
+
+        .w3-button i {
+            font-size: 30px;
+            /* Adjust the size as needed */
+        }
+
+
+
+        .w3-button {
+            padding: 16px;
+            /* Add padding to make the buttons more clickable */
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .bio h2 {
+            font-size: 50px;
+            font-weight: bold;
+            animation: typing 4s steps(30, end) forwards !important;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            margin-bottom: 0;
+            /* Add this line to remove margin bottom */
+
+        }
+
+        #typingEffect span {
+            font-weight: bold;
+            /* Make the text bold */
+            color: #000000;
+            /* Change the text color */
+            font-size: 32px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+
+        #about-me {
+            /* Choose your desired background color */
+            padding: 20px;
+            /* Add padding for better visual separation */
+            display: flex;
+            color: #080808;
+            justify-content: space-between;
+        }
+
+        #bio {
+            align-self: flex-start;
+        }
+
+        #rest-of-bio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+            /* Adjust margin between profile picture and button */
+        }
+
+
+        #projects {
+            padding: 40px;
+        }
+
+        #projects h2,
+        #education h2, 
+        #skills h2 {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            font-size: 30px;
+        }
+     
+
+        .card .book-list {
+            line-height: 1.5;
+        }
+
+        .card .mask-list {
+            line-height: 1.5;
+        }
+
+        .card .cutlery-list {
+            line-height: 1.5;
+        }
+
+        .card .paper-pen-list {
+            line-height: 1.5;
+        }
+
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        #additionalText {
+            font-size: 30px;
+            /* Change the font size */
+            line-height: 1.5;
+            font-family: "Truculenta", sans-serif;
+        }
+
+        .description {
+            max-width: 700px;
+            font-family: "Truculenta", sans-serif;
+            font-size: 25px;
+            line-height: 1.6;
+
+        }
+
+        .school {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .school1 {
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
+            opacity: 1;
+            /* Set opacity to 1 to ensure visibility */
+            border: 2px solid #29295f;
+            align-items: center;
+        }
+
+
+        .card-image {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 2px;
+            /* Optional: To match the card border radius */
+        }
+
+        .uiuc-card-image {
+            max-width: 200px;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 2px;
+            margin-left: 30px;
+        }
+
+        .lyn-card-image {
+            margin-top: 10px;
+        }
+
+        .school1 .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .front,
+        .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            transform: rotateY(180deg);
+        }
+
+        .back a {
+            font-size: 19px;
+        }
+
+        .flipped .front {
+            transform: rotateY(180deg);
+        }
+
+        .flipped .back {
+            transform: rotateY(0deg);
+        }
+
+        .card {
+            width: 350px;
+            height: 625px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(2, 31, 7, 0.1);
+            opacity: 0;
+            animation: pop-up 0.5s ease forwards;
+            transform: translateY(50px);
+            /* Initially translate it down */
+            border: 2px solid #29295f;
+        }
+
+        .card2 {
+            width: 400px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(34, 7, 7, 0.1);
+            animation: slide-in 2s ease forwards;
+            opacity: 0;
+            border: 2px dotted #29295f;
+        }
+
+        .card2 li {
+            line-height: 1.5;
+        }
+
+        .card2 li a {
+            color: #7b4431;
+            text-decoration: none;
+        }
+
+        .card2 li a:hover {
+            text-decoration: underline;
+        }
+
+        .card2 {
+            font-size: 20px;
+        }
+        .card2 h3 {
+            font-size: 30px;
+        }
+
+
+        @keyframes slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .card2:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+
+        .card2:nth-child(2) {
+            animation-delay: 0.8s;
+        }
+
+        .card2:nth-child(3) {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes pop-up {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 1.3s;
+        }
+
+        .profile-picture {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 5px rgba(0, 0, 0, 0.1),
+                /* Innermost layer */
+                0 0 0 10px rgba(0, 0, 0, 0.1),
+                /* Middle layer */
+                0 0 0 15px rgba(0, 0, 0, 0.1);
+            /* Outermost layer */
+        }
+
+        .profile-text {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: end;
+        }
+
+        .info {
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            /* Adjust margin as needed */
+        }
+
+        .resume-button {
+            padding: 20px 30px;
+            background-color: #634949;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+  
+        }
+
+        .resume-button:hover {
+            background-color: #280b0b;
+            /* Darker color on hover */
+        }
+
+        .flash-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 8px 12px; /* Adjust padding as needed */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        .school1:hover .flash-text {
+            display: block;
+            font-size: 25px;
+            color: black;
+            text-decoration: bold;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .card a {
+            font-size: 20px;
+        }

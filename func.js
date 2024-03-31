@@ -7,10 +7,10 @@ function toggleFlashcard(element) {
 
 const typingEffectLoop = {
   textArray: [
-      "you've made it to sneha's portfolio website!",
-      "i'm a data scientist",
-      "n I L L I N I 💙 🧡",
-      " developer",
+      "welcome to my portfolio website!",
+      "i'm sneha, a data scientist",
+      "n I L L I N I",
+      " software engineer",
     ],
 
   index: 0,
@@ -77,7 +77,7 @@ const typingEffectLoop = {
       this.isDeleting = false;
       this.index = (this.index + 1) % this.textArray.length;
       delta = 500;
-    } else if (this.isDeleting && this.text == "I'm Sneha, a" && (this.index == 1 || this.index == 2)) {
+    } else if (this.isDeleting && this.text == "i'm sneha, a" && (this.index == 1 || this.index == 2)) {
       this.isDeleting = false;
       this.index = (this.index + 1) % this.textArray.length;
       delta = 500;
