@@ -174,6 +174,8 @@ section {
 
 .card h3 {
     font-size: 30px;
+    color: black;
+    margin-top: 0; /* Remove top margin of heading */
 }
 
 .card ul {
