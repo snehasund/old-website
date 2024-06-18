@@ -66,7 +66,8 @@ section {
     padding: 20px;
     display: flex;
     color: #080808;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 #bio {
@@ -120,10 +121,9 @@ section {
 
 /* Profile Picture */
 .profile-picture {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1), 0 0 0 10px rgba(0, 0, 0, 0.1), 0 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 250px; /* Adjust width as needed */
+  height: 250px; /* Adjust height as needed */
 }
 
 /* Button */
@@ -134,7 +134,7 @@ section {
     text-decoration: none;
     border-radius: 20px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .resume-button:hover {
@@ -149,7 +149,7 @@ section {
 #projects h2,
 #education h2,
 #skills h2 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .card-container {
